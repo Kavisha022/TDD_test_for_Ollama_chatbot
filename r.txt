@@ -4,5 +4,7 @@ pyttsx3
 langdetect
 pyaudio
 pytest
+pytest-html
+
 
 

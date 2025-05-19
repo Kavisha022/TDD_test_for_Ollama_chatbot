@@ -1,0 +1,8 @@
+streamlit
+SpeechRecognition
+pyttsx3
+langdetect
+pyaudio
+pytest
+
+

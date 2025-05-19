@@ -93,3 +93,23 @@ def generate_answer_with_ollama2(question):
         return result["response"]
     except Exception as e:
         return f"Error communicating with Ollama: {e}"
+    
+
+
+# For test_voice.py
+def get_voice_input2():
+    # return "What is data science?"
+
+    recognizer = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening for your question (max 5 seconds)...")
+        audio = recognizer.listen(source, phrase_time_limit=5)
+
+        try:
+            text = recognizer.recognize_google(audio)
+            print(f"You said: {text}")
+            return text
+        except sr.UnknownValueError:
+            return "Sorry, I couldn't understand the audio."
+        except sr.RequestError:
+            return f"Could not request result; {e}"

@@ -72,6 +72,8 @@ if st.button("🎤 Ask Your Question"):
         speak("Sorry, something went wrong.")
 
 
+
+#=============================================================================================================================
 # TDD Testing part
 
 # For test_llm.py
@@ -113,3 +115,9 @@ def get_voice_input2():
             return "Sorry, I couldn't understand the audio."
         except sr.RequestError:
             return f"Could not request result; {e}"
+        
+
+# For test_language.py
+def detect_language(text):
+    # return "en"
+    return detect(text)

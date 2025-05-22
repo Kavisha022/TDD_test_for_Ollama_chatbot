@@ -1,5 +1,5 @@
 from unittest.mock import patch, MagicMock
-from app import get_voice_input2
+from tdd_chatbot.app import get_voice_input2
 
 @patch("speech_recognition.Recognizer.listen")
 @patch("speech_recognition.Microphone")

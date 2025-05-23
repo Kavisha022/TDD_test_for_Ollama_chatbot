@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: tdd-chatbot
+Version: 0.1.0
+Summary: Voice-based chatbot using Ollama LLM with TDD
+Author: Kavisha Nilmani
+Author-email: kavishanilmani@outlook.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.11.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # 🎙️ Ollama Voice Q&A Bot
 
 > 🎯 **A voice-activated chatbot that answers only data science-related questions using Ollama (Mistral LLM).**
@@ -41,10 +55,5 @@ This project follows TDD principles:
 - `test_llm.py`: Ensures LLM answers are relevant
 - `test_voice.py`: Mocks voice input and checks result
 - `test_language.py`: Validates correct language detection
-
----
-
-## Download Python Package
-https://pypi.org/project/tdd-chatbot/0.1.0/
 
 ---
